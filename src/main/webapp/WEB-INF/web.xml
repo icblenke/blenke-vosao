@@ -41,6 +41,10 @@
     <!-- GAE JSF stuff -->
     
     <context-param>
+        <param-name>com.sun.faces.enableThreading</param-name>
+        <param-value>false</param-value>
+    </context-param>
+    <context-param>
         <param-name>com.sun.faces.enableMultiThreadedStartup</param-name>
         <param-value>false</param-value>
     </context-param>
@@ -48,7 +52,11 @@
         <param-name>com.sun.faces.expressionFactory</param-name>
         <param-value>com.sun.el.ExpressionFactoryImpl</param-value>
     </context-param>
-
+    <context-param>
+        <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
+        <param-value>client</param-value>
+    </context-param>
+    
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
     </welcome-file-list>

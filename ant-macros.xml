@@ -9,7 +9,7 @@
  -->
 <project name="appengine-ant-macros">
 
-  <property name="appengine.sdk.home" location="/home/oleynik/japp/gae"/>
+  <property file="ant.properties" />
   <property name="appengine.tools.classpath" 
             location="${appengine.sdk.home}/lib/appengine-tools-api.jar"/>
 

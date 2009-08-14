@@ -1,5 +1,7 @@
+import java.io.Serializable;
 
-public class TestBean {
+
+public class TestBean implements Serializable {
 
 	private String text;
 	private int counter;

@@ -1,6 +1,6 @@
 <project name="Guestbook" default="datanucleusenhance">
-    <property name="sdk.dir" location="/home/oleynik/japp/gae"/>
     <import file="ant-macros.xml"/>
+    <property name="sdk.dir" location="${appengine.sdk.home}"/>
     <property name="war.dir" value="target/vosaocms"/>
 
     <target name="datanucleusenhance" description="Performs JDO enhancement on compiled data classes.">
